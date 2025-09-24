@@ -8,30 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		256AC3DA0F4B6AC300CF3369 /* aLgrTepy2eAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* aLgrTepy2eAppDelegate.m */; };
+		256AC3DA0F4B6AC300CF3369 /* BigTextAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* BigTextAppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		F207599B104E581F00B06A89 /* DYLargeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2075999104E581F00B06A89 /* DYLargeTextView.m */; };
-		F2A144CB10504DB800B3D2EA /* DYLargeTextWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A144CA10504DB800B3D2EA /* DYLargeTextWindow.m */; };
+		F207599B104E581F00B06A89 /* BigTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2075999104E581F00B06A89 /* BigTextView.m */; };
+		F2A144CB10504DB800B3D2EA /* BigTextWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A144CA10504DB800B3D2EA /* BigTextWindow.m */; };
 		F2A147081050C27500B3D2EA /* app.icns in Resources */ = {isa = PBXBuildFile; fileRef = F2A147071050C27500B3D2EA /* app.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		256AC3D80F4B6AC300CF3369 /* aLgrTepy2eAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aLgrTepy2eAppDelegate.h; sourceTree = "<group>"; };
-		256AC3D90F4B6AC300CF3369 /* aLgrTepy2eAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aLgrTepy2eAppDelegate.m; sourceTree = "<group>"; };
-		256AC3F00F4B6AF500CF3369 /* aLgrTepy2e_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aLgrTepy2e_Prefix.pch; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* BigTextAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigTextAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* BigTextAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigTextAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* BigText_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigText_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		8D1107310486CEB800E47090 /* aLgrTepy2e-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "aLgrTepy2e-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* LargeType2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LargeType2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2075999104E581F00B06A89 /* DYLargeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLargeTextView.m; sourceTree = "<group>"; };
-		F207599A104E581F00B06A89 /* DYLargeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLargeTextView.h; sourceTree = "<group>"; };
-		F2A144C910504DB800B3D2EA /* DYLargeTextWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLargeTextWindow.h; sourceTree = "<group>"; };
-		F2A144CA10504DB800B3D2EA /* DYLargeTextWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLargeTextWindow.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* BigText-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BigText-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* BigText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2075999104E581F00B06A89 /* BigTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigTextView.m; sourceTree = "<group>"; };
+		F207599A104E581F00B06A89 /* BigTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigTextView.h; sourceTree = "<group>"; };
+		F2A144C910504DB800B3D2EA /* BigTextWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigTextWindow.h; sourceTree = "<group>"; };
+		F2A144CA10504DB800B3D2EA /* BigTextWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigTextWindow.m; sourceTree = "<group>"; };
 		F2A147071050C27500B3D2EA /* app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app.icns; sourceTree = "<group>"; };
 		F2C41CA2274ABAB70098CEDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2C41CA4274ABABC0098CEDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -52,12 +52,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				256AC3D80F4B6AC300CF3369 /* aLgrTepy2eAppDelegate.h */,
-				256AC3D90F4B6AC300CF3369 /* aLgrTepy2eAppDelegate.m */,
-				F2A144C910504DB800B3D2EA /* DYLargeTextWindow.h */,
-				F2A144CA10504DB800B3D2EA /* DYLargeTextWindow.m */,
-				F207599A104E581F00B06A89 /* DYLargeTextView.h */,
-				F2075999104E581F00B06A89 /* DYLargeTextView.m */,
+				256AC3D80F4B6AC300CF3369 /* BigTextAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* BigTextAppDelegate.m */,
+				F2A144C910504DB800B3D2EA /* BigTextWindow.h */,
+				F2A144CA10504DB800B3D2EA /* BigTextWindow.m */,
+				F207599A104E581F00B06A89 /* BigTextView.h */,
+				F2075999104E581F00B06A89 /* BigTextView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -83,7 +83,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* LargeType2.app */,
+				8D1107320486CEB800E47090 /* BigText.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				256AC3F00F4B6AF500CF3369 /* aLgrTepy2e_Prefix.pch */,
+				256AC3F00F4B6AF500CF3369 /* BigText_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F2A147071050C27500B3D2EA /* app.icns */,
-				8D1107310486CEB800E47090 /* aLgrTepy2e-Info.plist */,
+				8D1107310486CEB800E47090 /* BigText-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
@@ -132,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* LargeType2 */ = {
+		8D1107260486CEB800E47090 /* BigText */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LargeType2" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "BigText" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -144,10 +144,10 @@
 			);
 			dependencies = (
 			);
-			name = LargeType2;
+			name = BigText;
 			productInstallPath = "$(HOME)/Applications";
 			productName = aLgrTepy2e;
-			productReference = 8D1107320486CEB800E47090 /* LargeType2.app */;
+			productReference = 8D1107320486CEB800E47090 /* BigText.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +163,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "aLgrTepy2e" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BigText" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
@@ -175,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* LargeType2 */,
+				8D1107260486CEB800E47090 /* BigText */,
 			);
 		};
 /* End PBXProject section */
@@ -199,9 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				256AC3DA0F4B6AC300CF3369 /* aLgrTepy2eAppDelegate.m in Sources */,
-				F207599B104E581F00B06A89 /* DYLargeTextView.m in Sources */,
-				F2A144CB10504DB800B3D2EA /* DYLargeTextWindow.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* BigTextAppDelegate.m in Sources */,
+				F207599B104E581F00B06A89 /* BigTextView.m in Sources */,
+				F2A144CB10504DB800B3D2EA /* BigTextWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +232,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 4;
@@ -240,12 +241,12 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = aLgrTepy2e_Prefix.pch;
-				INFOPLIST_FILE = "aLgrTepy2e-Info.plist";
+				GCC_PREFIX_HEADER = BigText_Prefix.pch;
+				INFOPLIST_FILE = "BigText-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = net.blyt.algrtepy2e;
-				PRODUCT_NAME = LargeType2;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = dan.BigText;
+				PRODUCT_NAME = BigText;
 			};
 			name = Debug;
 		};
@@ -254,17 +255,18 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = aLgrTepy2e_Prefix.pch;
-				INFOPLIST_FILE = "aLgrTepy2e-Info.plist";
+				GCC_PREFIX_HEADER = BigText_Prefix.pch;
+				INFOPLIST_FILE = "BigText-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = net.blyt.algrtepy2e;
-				PRODUCT_NAME = LargeType2;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = dan.BigText;
+				PRODUCT_NAME = BigText;
 			};
 			name = Release;
 		};
@@ -345,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LargeType2" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "BigText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
@@ -354,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "aLgrTepy2e" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BigText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

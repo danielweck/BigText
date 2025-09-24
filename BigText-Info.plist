@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>LargeType2 1.2.1, Copyright 2009-2023 Dominic Yu</string>
+	<string>BigText 0.0.1</string>
 	<key>CFBundleIconFile</key>
 	<string>app.icns</string>
 	<key>CFBundleIdentifier</key>
@@ -21,7 +21,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
-	<string>aLgr</string>
+	<string>dan</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSApplicationCategoryType</key>
@@ -40,10 +40,10 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>LargeType</string>
+				<string>BigText</string>
 			</dict>
 			<key>NSMessage</key>
-			<string>largeType</string>
+			<string>bigText</string>
 			<key>NSRequiredContext</key>
 			<dict>
 				<key>NSWordLimit</key>
