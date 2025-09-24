@@ -11,34 +11,38 @@
 	NSString *bigTextString;
     CGFloat bigTextFontSize;
     CGFloat bigTextHeight;
+    CGFloat bigTextWidth;
 }
 @end
 
 @implementation BigTextView
 
 - (void)drawRect:(NSRect)dirtyRect {
-	NSRect selfRect = self.bounds;
-	
+    NSRect selfRect = self.bounds;
+    
     [[NSColor clearColor] set];
     NSRectFill(self.bounds);
-	NSBezierPath* bezierPath = [NSBezierPath bezierPath];
-	[bezierPath appendBezierPathWithRoundedRect:selfRect xRadius:WINDOW_MARGIN yRadius:WINDOW_MARGIN];
+    NSBezierPath* bezierPath = [NSBezierPath bezierPath];
+    [bezierPath appendBezierPathWithRoundedRect:selfRect xRadius:WINDOW_MARGIN yRadius:WINDOW_MARGIN];
     [[[NSColor blackColor] colorWithAlphaComponent:0.85] set];
-	[bezierPath fill];
-	
-	NSMutableParagraphStyle *paragraphStyle;
-	paragraphStyle = [[[NSMutableParagraphStyle alloc] init] autorelease];
-	paragraphStyle.alignment = NSTextAlignmentCenter;
-	
-	NSShadow *shadow = [[[NSShadow alloc] init] autorelease];
-	shadow.shadowBlurRadius = 5;
-	shadow.shadowOffset = NSMakeSize(5, -5);
-	
-	NSDictionary *atts = @{NSFontAttributeName: [NSFont boldSystemFontOfSize:bigTextFontSize],
-						  NSForegroundColorAttributeName: [NSColor whiteColor],
-						  NSShadowAttributeName: shadow,
-						  NSParagraphStyleAttributeName: paragraphStyle};
-	
+    [bezierPath fill];
+    
+    NSMutableParagraphStyle *paragraphStyle;
+    paragraphStyle = [[[NSMutableParagraphStyle alloc] init] autorelease];
+    paragraphStyle.alignment = NSTextAlignmentCenter;
+    
+    NSShadow *shadow = [[[NSShadow alloc] init] autorelease];
+    shadow.shadowBlurRadius = 5;
+    shadow.shadowOffset = NSMakeSize(5, -5);
+    
+    NSDictionary *atts = @{NSFontAttributeName: [NSFont boldSystemFontOfSize:bigTextFontSize],
+                           NSForegroundColorAttributeName: [NSColor whiteColor],
+                           NSShadowAttributeName: shadow,
+                           NSParagraphStyleAttributeName: paragraphStyle};
+    
+//    selfRect.origin.x += HORIZONTAL_PADDING;
+    selfRect.origin.x += (selfRect.size.width - bigTextWidth) / 2;
+    selfRect.size.width = bigTextWidth;
     selfRect.origin.y -= (selfRect.size.height - bigTextHeight) / 2;
 	
 	[bigTextString drawWithRect:selfRect
@@ -73,9 +77,22 @@
 		} else {
 			widthPerCharacter = floor(widthPerCharacter);
 		}
+
 		NSMutableDictionary *atts = [[NSMutableDictionary alloc] init];
 		atts[NSFontAttributeName] = [NSFont boldSystemFontOfSize:widthPerCharacter];
-		
+        
+        NSMutableParagraphStyle *paragraphStyle;
+        paragraphStyle = [[[NSMutableParagraphStyle alloc] init] autorelease];
+        paragraphStyle.alignment = NSTextAlignmentCenter;
+        
+        NSShadow *shadow = [[[NSShadow alloc] init] autorelease];
+        shadow.shadowBlurRadius = 5;
+        shadow.shadowOffset = NSMakeSize(5, -5);
+        
+        atts[NSForegroundColorAttributeName] = [NSColor whiteColor];
+        atts[NSShadowAttributeName] = shadow;
+        atts[NSParagraphStyleAttributeName] = paragraphStyle;
+
 		bigTextFontSize = widthPerCharacter;
 		CGFloat textWidth = [bigTextString sizeWithAttributes:atts].width;
 		
@@ -91,6 +108,7 @@
 									 options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
 								  attributes:@{NSFontAttributeName:[NSFont boldSystemFontOfSize:bigTextFontSize]}];
     bigTextHeight = strRect.size.height;
+    bigTextWidth = widthAvailableForTextLine; // strRect.size.width;
 
     NSSize windSize = strRect.size;
     windSize.width = mainScreenWidth - 2 * WINDOW_MARGIN;
